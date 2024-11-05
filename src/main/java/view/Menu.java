@@ -35,6 +35,9 @@ public class Menu {
             case 1:
                 ItemServiceImpl itemService = new ItemServiceImpl();
                 itemService.listarItens();
+                System.out.println("Selecione uma opção do menu");
+                Integer item = scanner.nextInt();
+                itemService.selecionarItem(item);
                 break;
             default:
                 System.out.println("Até logo!");
