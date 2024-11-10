@@ -73,6 +73,6 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public Item selecionarItem(Integer id) {
-        return itens.get(id);
+        return itens.get(id-1);
     }
 }

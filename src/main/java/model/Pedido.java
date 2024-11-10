@@ -17,6 +17,9 @@ public class Pedido {
 
     private LocalDate dataPedido;
 
+    public Pedido() {
+    }
+
     public Pedido(Cliente cliente, List<Item> items, String observacao, StatusPedido statusPedido) {
         this.cliente = cliente;
         this.items = items;
@@ -75,11 +78,12 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return " Pedido  " +
-                "cliente = " + cliente + '\'' +
-                "items = " + items + '\'' +
-                "observacao = '" + observacao + '\'' +
-                "statusPedido = " + statusPedido + '\'' +
-                "dataPedido = " + dataPedido;
+        return  "[---------------------------------]\n"
+                +"Pedido  " +
+                "cliente : " + cliente + "\n" +
+                items +"\n"+
+                "observacao : " + observacao + "\n" +
+                "statusPedido : " + statusPedido + "\n" +
+                "dataPedido : " + dataPedido;
     }
 }

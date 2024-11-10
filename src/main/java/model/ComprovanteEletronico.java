@@ -13,6 +13,9 @@ public class ComprovanteEletronico {
         this.formaPagamento = formaPagamento;
     }
 
+    public ComprovanteEletronico() {
+    }
+
     public Integer getId() {
         return id;
     }
@@ -39,8 +42,8 @@ public class ComprovanteEletronico {
 
     @Override
     public String toString() {
-        return "ComprovanteEletronico " + "\n"+
-                "pedido = " + pedido + "\n"+
-                "formaPagamento = " + formaPagamento +  "\n";
+        return "------------- ComprovanteEletronico -------------" + "\n"+
+                pedido + "\n"+
+                "formaPagamento : " + formaPagamento;
     }
 }
