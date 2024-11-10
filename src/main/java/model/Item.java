@@ -70,7 +70,7 @@ public class Item {
     @Override
     public String toString() {
         return   "-------------------------------------\n"+
-                "numero do item" + id + "\n" +
+                "numero do item = " + id + "\n" +
                 "nomeDoItem = " + nomeDoItem + "\n" +
                 "precoDoItem = " + precoDoItem + "\n" +
                 "descricao = " + descricao + "\n" +

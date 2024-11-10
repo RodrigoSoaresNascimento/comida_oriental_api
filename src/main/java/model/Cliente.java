@@ -30,8 +30,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente " + '\'' +
-                "nome = '" + nome + '\'' +
-                "id = " + id + '\'';
+        return nome;
     }
 }

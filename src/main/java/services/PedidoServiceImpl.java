@@ -1,5 +1,6 @@
 package services;
 
+import model.Item;
 import model.Pedido;
 
 import java.time.LocalDate;
@@ -18,12 +19,9 @@ public class PedidoServiceImpl implements PedidoService{
 
     @Override
     public Double calcularValorPedido(Pedido pedido) {
-        Pedido pedidoCadastrado = pedidos.stream()
-                .filter(pedido1 -> pedido1.getId() == pedido.getId()).toList().get(0);
 
-
-        return pedidoCadastrado.getItems().stream()
-                .mapToDouble(value -> value.getPrecoDoItem())
+        return pedido.getItems().stream()
+                .mapToDouble(Item::getPrecoDoItem)
                 .sum();
     }
 
